@@ -44,6 +44,11 @@ which.max(table(survey$Height))
 
 ```
 
+# Correlação e Regressão
+```R
+
+```
+
 # Gráficos
 
 ### Histograma
@@ -62,11 +67,6 @@ which.max(table(survey$Height))
 ```
 
 ### Pizza
-```R
-
-```
-
-# Correlação e Regressão
 ```R
 
 ```
