@@ -6,9 +6,8 @@ A análise em questão envolveu:
 - [Medidas de tendência central](#medidas-de-tendência-central)
 - [Medidas de dispersão](#medidas-de-dispersão)
 - [Tabelas de frequências](#tabelas-de-frequências)
+- [Correlação e Regressão](#correlação-e-regressão)
 - [Gráficos](#gráficos)
-- [Correlação](#correlação)
-- [Regressão](#regressão)
 
 # Medidas de tendência central
 
