@@ -51,11 +51,6 @@ which.max(table(survey$Height))
 
 ```
 
-### Pizza
-```R
-
-```
-
 ### Diagrama de dispersão
 ```R
 
@@ -66,12 +61,12 @@ which.max(table(survey$Height))
 
 ```
 
-### Correlação
+### Pizza
 ```R
 
 ```
 
-### Regressão
+# Correlação e Regressão
 ```R
 
 ```
