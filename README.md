@@ -1,23 +1,14 @@
 # Objetivos
-Escolher um pacote de dados e um conjunto de dados para fazer uma análise estatística. A análise em questão envolveu:
+Escolher um pacote de dados e um conjunto de dados para fazer uma análise estatística. O dataset selecionado foi o Survey, do pacote de dados MASS. O dataset é baseado em uma pesquisa feita com cerca de 237 estudantes universitários sobre seus hábitos (fumar, se exercitar, entre outros) e suas características (altura, idade, gênero, entre outros).
 
-- [carregar pacote de dados](#carregar-pacote-de-dados)
-- [carregar conjunto de dados](#carregar-conjunto-de-dados)
-- [calcular medidas de tendência central](#medidas-de-tendência-central)
-- [calcular medidas de dispersão](#medidas-de-dispersão)
-- [gerar tabela de frequências](#tabela-de-frequências)
-- [gerar gráficos](#gráficos)
+A análise em questão envolveu:
 
-# Carregar pacote de dados
-```R
-library(MASS)
-```
-O pacote de dados selecionado para analisar foi o MASS 
-
-# Carregar conjunto de dados
-```R
-data(survey) 
-```
+- [Medidas de tendência central](#medidas-de-tendência-central)
+- [Medidas de dispersão](#medidas-de-dispersão)
+- [Tabelas de frequências](#tabelas-de-frequências)
+- [Gráficos](#gráficos)
+- [Correlação](#correlação)
+- [Regressão](#regressão)
 
 # Medidas de tendência central
 
@@ -49,7 +40,7 @@ which.max(table(survey$Height))
 
 ```
 
-# Tabela de frequências
+# Tabelas de frequências
 ```R
 
 ```
@@ -72,6 +63,16 @@ which.max(table(survey$Height))
 ```
 
 ### Gráfico de barras
+```R
+
+```
+
+### Correlação
+```R
+
+```
+
+### Regressão
 ```R
 
 ```
