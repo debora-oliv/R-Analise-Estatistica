@@ -1,3 +1,4 @@
+#Importando o pacote de dados (MASS), o conjunto de dados (survey) e a bilbioteca ggplot2 para plotagem dos gráficos
 library(ggplot2)
 library(MASS)
 data(survey)
@@ -23,8 +24,7 @@ ggplot(data = survey, aes(x = Height)) +
   )
 
 
-
-#Pizza
+#Gráfico de Pizza
 dados_fumo <- as.data.frame(table(survey$Smoke))
 names(dados_fumo) <- c("Categoria", "Frequência")
 
@@ -45,14 +45,12 @@ ggplot(dados_fumo, aes(x = "", y = Frequência, fill = Categoria)) +
             position = position_stack(vjust = 0.5), size = 4)
 
 
-
-#Barras
+#Gráfico de Barras
 ggplot(dados_fumo, aes(x = Categoria, y = Frequência, fill = Categoria)) +
   geom_bar(stat = "identity") +
   scale_fill_brewer(palette = "Set2") +
   labs(title = "Hábitos de Fumar") +
   theme_minimal()
-
 
 
 #Diagrama de Dispersão
@@ -64,8 +62,7 @@ ggplot(survey, aes(x = Age, y = Height)) +
   ) +
   geom_smooth(
     method = "lm",
-    color = "#945303"#,
-    #se = FALSE
+    color = "#945303"
   ) +
   labs(
     title = "Relação entre Idade e Altura",
@@ -75,4 +72,5 @@ ggplot(survey, aes(x = Age, y = Height)) +
   theme_minimal() +
   theme(
     plot.title = element_text(hjust = 0.5, face = "bold")
+
   )
