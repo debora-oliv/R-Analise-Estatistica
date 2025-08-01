@@ -1,13 +1,14 @@
+#Importando o pacote de dados (MASS), o conjunto de dados (survey) e a bilbioteca ggplot2 para plotagem dos gráficos
 library(ggplot2)
 library(MASS)
 data(survey)
 
 
+#Preparando os dados
+dados <- na.omit(survey[, c("Height", "Age", "Sex", "Smoke")]) #selecionando as colunas desejadas e removendo linhas que contenham valores ausentes
 
-dados <- na.omit(survey[, c("Height", "Age", "Sex", "Smoke")])
-dados$Sex <- as.factor(dados$Sex)
-dados$Smoke <- as.factor(dados$Smoke)
-
+dados$Sex <- as.factor(dados$Sex) #transformando a variável em fator
+dados$Smoke <- as.factor(dados$Smoke) #transformando a variável em fator
 
 
 #Correlação
@@ -20,7 +21,6 @@ correlacao_alturaXidade <- cor(dados$Height, dados$Age)
 print(round(correlacao_alturaXidade, 2))
 
 
-
 #Gráfico de dispersão
 ggplot(dados, aes(x = Age, y = Height)) +
   geom_point(color = "#8d2cab", size = 3, alpha = 0.7) +
@@ -31,7 +31,6 @@ ggplot(dados, aes(x = Age, y = Height)) +
     y = "Altura"
   ) +
   theme_minimal()
-
 
 
 #Regressõa Linear
@@ -49,4 +48,5 @@ ggplot(dados, aes(x = Age, y = Height, color = Sex)) +
     y = "Altura (cm)",
     color = "Gênero"
   ) +
+
   theme_minimal()
